@@ -2,6 +2,7 @@
 import Link from "next/link";
 import ShareButton from "@/components/ShareButton";
 import InFeedAdUnit from "@/components/InFeedAdUnit";
+import JobViewTracker from "@/components/JobViewTracker";
 
 export const revalidate = 60;
 
@@ -171,7 +172,11 @@ export default async function JobListSection({
                 <h2 className="text-lg sm:text-xl font-semibold text-blue-700">
                   {job.title}
                 </h2>
-                <ShareButton title={job.slug} />
+                <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-600">
+                  Views: {job.views}
+                  <ShareButton title={job.slug} />
+                  
+                </div>
               </div>
 
               <div className="flex items-center justify-between text-xs text-gray-600">

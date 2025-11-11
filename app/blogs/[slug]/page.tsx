@@ -6,7 +6,7 @@ import { cache, Fragment } from "react";
 
 import { ArrowLeft } from "lucide-react";
 import BlogShareButton from "@/components/BlogShareButton";
-import AdUnit from "@/components/AdUnit";
+import InArticleAd from "@/components/InArticleAd";
 
 const API_BASE_URL = "https://admin.hrpostingpartner.com/api";
 
@@ -627,7 +627,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                       )}
                       {shouldRenderAd && (
                         <div className="flex justify-center py-6">
-                          <AdUnit slotId="8015069158" />
+                          <InArticleAd slotId="8015069158" />
                         </div>
                       )}
                     </Fragment>
