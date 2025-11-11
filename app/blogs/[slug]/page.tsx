@@ -627,9 +627,9 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                         />
                       )}
                       {shouldRenderAd && (
-                        <div className="flex justify-center py-6">
+                        
                           <AdUnit slotId="8015069158" />
-                        </div>
+                       
                       )}
                     </Fragment>
                   );
